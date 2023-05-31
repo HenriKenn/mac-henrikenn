@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="Felipe Henrique - Desemvolvedor Beck-End" name="title"/>
+    <meta content="Meu nome é Felipe Henrique, também conhecido como HenriKenn, e este é meu portfólio de estilo de terminal Mac OS. Sou um dev, atualmente esudando ciência da computação. Eu uso principalmente JavaScript, Python, HTML,CSS." name="description"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="Português" name="Linguagem"/>
+    <meta content="Felipe Henrique" name="author"/>
+    <meta content="Elliot Sutton" name="author"/>
+    <title>Portfolio - Felipe Henrique</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="src/style/style.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" referrerpolicy="no-referrer" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="page-loader">
+    <img src="./src/img/apple-logo.png">
+    <div class="progress-load"></div>
+  </div>
+
+    <!-- TERMINAL -->
+    <div class="terminal open">
+        <div class="terminal-header">
+            <div class="button close"></div>
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-banner">
+              <pre>
+                __  _ _____ _   _ ____  ___ _  _______ _   _ _   __
+                | | | | ____| \ | |  _ \|_ _| |/ / ____| \ | | \ | |
+                | |_| |  _| |  \| | |_| || || ' /|  _| |  \| |  \| |
+                |  _  | |___| |\  |  _ / | || . \| |___| |\  | |\  |
+                |_| |_|_____|_| \_|_| \_\___|_|\_\_____|_| \_|_| \_|
+                
+              </pre>
+              <p>Bem-vindo ao meu terminal!
+                  <br>
+                  <br>Para exibir os comandos disponíveis, digite <code>help</code>.
+                  <br><em>⏎</em> : confirme um comando
+                  <br><em>↹</em> : completar automaticamente um comando
+                  <br><em>↑</em> : volta no histórico de comandos
+                  <br><em>↓</em> : volte para baixo no histórico de comandos
+                  <br>
+                  <br>Você pode abrir a janela <code>Contatos</code> clicando no ícone de contato para visualizar minhas informações e entrar em contato comigo.
+                  <br>Você também pode abrir a janela <code>Chrome</code> clicando no ícone do Google Chrome.
+                  <br>Por fim, para uma ótima experiência, não hesite em mudar para tela cheia clicando no ícone <i class="fas fa-expand"></i> no canto superior direito da tela.
+                  <br>
+                  <br>Sinta-se à vontade para bifurcar no github: <a href="https://github.com/HenriKenn" target="blank">https://github.com/HenriKenn</a>
+              </p>
+            </div>
+            <div id="terminal"></div>
+        </div>
+    </div>
+    <!-- /TERMINAL -->
+
+
+    <!-- BORWSER -->
+    <div class="navigateur">
+      <div class="navigateur-header">
+        <div class="button close"></div>
+        <div class="button minimize"></div>
+        <div class="button maximize"></div>
+        
+        <div class="tabs">
+          <div class="tabs-container">
+            <div class="tab active" data-target="#tab1">
+              <i class="fab fa-chrome"></i>
+              <span>Nova aba</span>
+              <div class="close-btn">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <!-- <div class="tab" data-target="#tab2">
+              <img src="src/img/avatar.png">
+              <span>Portfolio React</span>
+              <div class="close-btn">
+                <i class="fas fa-times" data-closer></i>
+              </div>
+            </div> -->
+          </div>
+          <button class="new-page">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="navigateur-nav">
+        <button aria-label="go back" data-back>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button aria-label="go forward" data-forward>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+        <button aria-label="reload" data-reload>
+          <i class="fas fa-redo"></i>
+        </button>
+        <div class="search">
+          <input type="text" placeholder="Pesquisar no Google ou digitar URL" />
+          <i class="fas fa-search"></i>
+        </div>
+        <button class="folder">
+          <i class="fas fa-folder"></i>
+        </button>
+        <button aria-label="account">
+          <i class="fas fa-user-circle"></i>
+        </button>
+        <button aria-label="menu">
+          <i class="fas fa-ellipsis-v"></i>
+        </button>
+      </nav>
+
+      <div class="navigateur-body int" id="tab1">
+        <div class="dinogame">
+          <iframe frameborder="0" style="height: 100%; width: 100%;"></iframe>
+        </div>
+      </div>
+
+      <!-- <div class="navigateur-body ext" id="tab2">
+        <iframe frameborder="0" style="height: 100%; width: 100%;" src="http://www.react.elliot-sutton.com/"></iframe>
+      </div> -->
+    </div>
+    <!-- /BORWSER -->
+
+
+    <!-- CONTACT -->
+    <div class="contact-wrapper">
+      <div class="contact-header">
+        <div class="buttons-header">
+          <div class="button close"></div>
+          <div class="button minimize"></div>
+          <div class="button maximize"></div>
+        </div>
+      </div>
+      <iframe frameborder="0" style="height: 100%; width: 100%;"></iframe>
+    </div>
+    <!-- CONTACT -->
+
+
+    <!-- OS -->
+
+      <!-- MENU BAR -->
+      <div class="menu-bar">
+        <div class="left">
+          <i class="fab fa-apple"></i>
+          <span class="menus active">HenriKenn</span>
+          <span class="menus">Arquivo</span>
+          <span class="menus">Editando</span>
+          <span class="menus">Seleção</span>
+          <span class="menus">Mostrar</span>
+          <span class="menus">Alcançar</span>
+          <span class="menus">Executar</span>
+          <span class="menus menu-terminal">Terminal</span>
+          <span class="menus">Janela</span>
+          <span class="menus">Ajudante</span>
+        </div>
+        <div class="right">
+      
+          <div class="menu-ico" data-extend></div>
+          <div class="menu-ico">
+            <i class="fab fa-bluetooth-b"></i>
+          </div>
+          <div class="menu-ico">
+            <i class="fas fa-battery-half"></i>
+          </div>
+          <div class="menu-ico">
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="menu-ico">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="menu-ico">
+            <img src="./src/img/control-center-icon.webp" alt="" class="control-center">
+          </div>
+          <div class="menu-ico">
+            <img src="./src/img/siri.png" alt="" class="siri">
+          </div>
+      
+          <div class="menu-time"></div>
+      
+        </div>
+      </div>
+      <!-- /MENU BAR -->
+    
+      <!-- DOCK -->
+      <div class="dock">
+        <div class="dock-container">
+          <li class="li-1">
+            <div class="name">Finder</div>
+            <img class="ico" src="./src/img/finder.png" alt="finder icon">
+          </li>
+          <li class="li-2 mobile-none">
+            <div class="name">LaunchPad</div>
+            <img class="ico" src="./src/img/launchpad.png" alt="launchpad icon">
+          </li>
+          <li class="li-3 li-terminal">
+            <div class="name">Terminal</div>
+            <img class="ico" src="./src/img/terminal.png" alt="terminal icon">
+          </li>
+          <li class="li-4 li-contact">
+            <div class="name">Contatos</div>
+            <img class="ico" src="./src/img/contacts.png" alt="contacts icon">
+          </li>
+          <li class="li-5 mobile-none">
+            <div class="name">Notas</div>
+            <img class="ico" src="./src/img/notes.png" alt="notes icon">
+          </li>
+          <li class="li-6 mobile-none">
+            <div class="name">Lembretes</div>
+            <img class="ico" src="./src/img/reminders.png" alt="rappels icon">
+          </li>
+          <li class="li-7">
+            <div class="name">Fotos</div>
+            <img class="ico" src="./src/img/photos.png" alt="photos icon">
+          </li>
+          <li class="li-8">
+            <div class="name">Menssages</div>
+            <img class="ico" src="./src/img/messages.png" alt="messages icon">
+          </li>
+          <li class="li-9 mobile-none">
+            <div class="name">App Store</div>
+            <img class="ico" src="./src/img/appstore.png" alt="appstore icon">
+          </li>
+          <li class="li-10 li-google">
+            <div class="name">Chrome</div>
+            <img class="ico" src="./src/img/chrome.png" alt="google icon">
+          </li>
+          <li class="li-bin li-11 mobile-none">
+            <div class="name">Lixeira</div>
+            <img class="ico ico-bin" src="./src/img/trash.png" alt="corbeille icon">
+          </li>
+      
+        </div>
+      </div>
+      <!-- /DOCK -->
+      
+    <!-- /OS -->
+
+    <script src="src/js/index.js" type="module"></script>
+</body>
+</html>

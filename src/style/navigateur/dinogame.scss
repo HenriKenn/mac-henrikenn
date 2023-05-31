@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+  margin-top: 7%;
+  width: 90% !important;
+  margin: 0 auto;
+
+  .score {
+    position: absolute;
+    font-size: 4vmin;
+    right: 1vmin;
+    top: 1vmin;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .start-screen {
+    position: absolute;
+    font-size: 4vmin;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .ground {
+    --left: 0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left: calc(var(--left) * 1%);
+  }
+
+  .dino {
+    --bottom: 0;
+    position: absolute;
+    left: 1%;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+  }
+
+  .cactus {
+    position: absolute;
+    left: calc(var(--left) * 1%);
+    height: 30%;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .world {
+    width: 100% !important;
+  }
+}
+
+.fake-error {
+  margin-top: 40px;
+  width: 90%;
+}

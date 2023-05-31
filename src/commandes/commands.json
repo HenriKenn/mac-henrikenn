@@ -1,0 +1,80 @@
+[
+  {
+    "command":"help",
+    "responseType":"list",
+    "value":[
+      "<code>perfil</code> : Mais informações pessoais",
+      "<code>linkedin</code> : Meu perfil do Linkedin",
+      "<code>github</code> : Meu perfil do Github",
+      "<code>clear</code> : Limpar histórico terminal",
+      "<code>experiencias</code> : Lista das minhas experiências",
+      "<code>formacao</code> : Lista dos meus treinamentos",
+      "<code>help</code> : Lista de comandos", 
+      "<code>dark/light</code> : Altere o tema do terminal"
+    ]
+  },
+  {
+    "command":"perfil",
+    "responseType":"text",
+    "value":[
+      "Nome: Felipe",
+      "<br>Sobrenome: Henrique",
+      "<br>Idade: 22 anos",
+      "<br>Status: Desenvolvedor Back-End",
+      "<br>Formação: Estudante da tecnologia",
+      "<br>Localização: Campina Grande, Paraíba",
+      "<br>Descrição: Estou atualmente em <a href='https://discord.gg/codehelp' target='blank'>Code help brasil</a>."
+    ]
+  },
+  {
+    "command":"linkedin",
+    "responseType":"link",
+    "value":[
+      "https://www.linkedin.com/in/felipehenrikenn/"
+    ]
+  },
+  {
+    "command":"github",
+    "responseType":"link",
+    "value":[
+      "https://github.com/HenriKenn"
+    ]
+  },
+  {
+    "command":"experiencias",
+    "responseType":"table",
+    "headers":[
+      "Data",
+      "Empresa",
+      "Descrição"
+    ],
+    "rows":[
+      [
+        "Abril 2023 - Estudante na Programação",
+        "Code Help Brasil",
+        "Desenvolvedor Web + Python"
+      ]
+    ]
+  },
+  {
+    "command":"formacao",
+    "responseType":"table",
+    "headers":[
+      "Data",
+      "Escola",
+      "Diploma"
+    ],
+    "rows":[
+      [
+        "2005 - 2014",
+        "Escola Estadual - EMEF CEAI DR ELPIDIO DE ALMEIDA",
+        "Ensino fundamental completo"
+      ],
+      [
+        "2017 - 2019",
+        "Escola Estadual - EEEF REITOR EDVALDO DO O",
+        "Ensino médio completo"
+      ]
+    ]
+  }
+]

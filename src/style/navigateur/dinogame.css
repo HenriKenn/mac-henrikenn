@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.world {
+  overflow: hidden;
+  position: relative;
+  margin-top: 7%;
+  width: 90% !important;
+  margin: 0 auto;
+}
+.world .score {
+  position: absolute;
+  font-size: 4vmin;
+  right: 1vmin;
+  top: 1vmin;
+  font-family: "Press Start 2P", cursive;
+}
+.world .start-screen {
+  position: absolute;
+  font-size: 4vmin;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.world .hide {
+  display: none;
+}
+.world .ground {
+  --left: 0;
+  position: absolute;
+  width: 300%;
+  bottom: 0;
+  left: calc(var(--left) * 1%);
+}
+.world .dino {
+  --bottom: 0;
+  position: absolute;
+  left: 1%;
+  height: 30%;
+  bottom: calc(var(--bottom) * 1%);
+}
+.world .cactus {
+  position: absolute;
+  left: calc(var(--left) * 1%);
+  height: 30%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 614px) {
+  .world {
+    width: 100% !important;
+  }
+}
+.fake-error {
+  margin-top: 40px;
+  width: 90%;
+}/*# sourceMappingURL=dinogame.css.map */
