@@ -4,23 +4,13 @@ const Dashboard = () => {
 
   initDashboard();
 
-  // const itemList = [
-  //   {
-  //     name: "Skyleen",
-  //     img: "src/img/skyleen.png",
-  //     link: "https://skyleen.fr/"
-  //   },
-  //   {
-  //     name: "Virtuabot",
-  //     img: "src/img/virtuabot.png",
-  //     link: "https://virtuabot.fr/"
-  //   },
-  //   {
-  //     name: "DMH",
-  //     img: "src/img/dmh.png",
-  //     link: "https://dmh77.com/"
-  //   }
-  // ]
+  const itemList = [
+    {
+      name: "HenriKenn",
+      img: "src/img/henrikenn-port.png",
+      link: "https://henrikenn.github.io/DevLinks/",
+    }
+  ]
 
   itemList.forEach(item => {
     const grid = document.querySelector('.grid');

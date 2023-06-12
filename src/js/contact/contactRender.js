@@ -25,7 +25,7 @@ const ContactRender = () => {
           </div>
           <div class="contact-body">
             <div class="contact-body-header">
-              <img src="src/img/me.jpg">
+              <img src="https://avatars.githubusercontent.com/u/50687213?v=4">
               <span>HenriKenn</span>
             </div>
 

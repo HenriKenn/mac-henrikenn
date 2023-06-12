@@ -218,7 +218,7 @@ const Browser = () => {
       resetVar();
 
       addTabBtn.addEventListener('click', () => {
-        displayPopup(tabsBody, 'Vous ne pouvez pas ouvrir de nouveaux onglets !');
+        displayPopup(tabsBody, 'Você não pode abrir novas abas!');
       });
 
       tabsMove(tabs);
