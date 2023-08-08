@@ -22,8 +22,7 @@
       "<br>Idade: 22 anos",
       "<br>Status: Desenvolvedor Full-Stack",
       "<br>Formação: Estudante da tecnologia",
-      "<br>Localização: Campina Grande, Paraíba",
-      "<br>Descrição: Estou atualmente em <a href='https://discord.gg/codehelp' target='blank'>Code help brasil</a>."
+      "<br>Localização: Campina Grande, Paraíba"
     ]
   },
   {
@@ -51,7 +50,7 @@
     "rows":[
       [
         "Abril 2023 - Estudante na Programação",
-        "Code Help Brasil",
+        "Students",
         "Desenvolvedor Web + Python"
       ]
     ]

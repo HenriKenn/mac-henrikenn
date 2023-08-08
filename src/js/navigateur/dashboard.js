@@ -6,7 +6,7 @@ const Dashboard = () => {
 
   const itemList = [
     {
-      name: "HenriKenn",
+      name: "Portfólio",
       img: "src/img/henrikenn-port.png",
       link: "https://henrikenn.github.io/DevLinks/",
     }
@@ -45,7 +45,7 @@ const Dashboard = () => {
 
   function initDashboard() {
     const h1 = document.createElement("h1");
-    h1.textContent = 'Dashboard';
+    h1.textContent = 'Projetos / Portfólios';
     dashboard.appendChild(h1);
 
     const div = document.createElement("div");
